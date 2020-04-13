@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
-<div class="bar">
+<div class="bar" style="display:none;">
     <a href="<?php $this->options->siteUrl(); ?>" class="barItemBindex">
         <div class="mdui-ripple" id="Get-newCom">
             <i class="fa fa-home"></i>
@@ -24,12 +24,17 @@
 </div>
 <div class="indexSidebar otherSidebarPos">
     <div class="indexSidebarBtn-Pos">
-        <button class="fa fa-angle-up mdui-ripple backPageTop" title="页面顶部"></button>
         <a <!--href="--><?php /*$this->options->adminUrl(); */?>">
-            <button class="fa fa-link mdui-ripple openLinkMenu" onclick="linkMenu()" title="撰写新文章"></button>
+            <button class="fa fa-link mdui-ripple openLinkMenu" onclick="linkMenu()" title="更多"></button>
         </a>
-        <div class="linkMenu">
+        <div class="linkMenu" style="display: block;">
             <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
+            <a href="https://stapx.chuhelan.com/">
+                <div>主页</div>
+            </a>
+            <a class="barItem mdui-ripple" id="Get-Tags">
+                <div>标签</div>
+            </a>
             <?php while($pages->next()): ?>
                 <a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><div class="mdui-ripple"><?php $pages->title(); ?></div></a>
             <?php endwhile; ?>
@@ -42,7 +47,8 @@
                 </div>
             </a>
         </div>
-        <button class="fa fa-angle-down mdui-ripple toBottom" title="页面底部"></button>
+        <button class="fa fa-angle-up mdui-ripple backPageTop" title="页面顶部"></button>
+        <!-- <button class="fa fa-angle-down mdui-ripple toBottom" title="页面底部"> --></button>
     </div>
 </div>
 <script>

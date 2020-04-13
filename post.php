@@ -8,13 +8,14 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
       <div class="mdui-row">
         <div class="mdui-col-md-3 mdui-hidden-sm mdui-hidden-xs">
             <div class="page-readNow" id="pTitle-list">
-                <div class="readNow-list"></div>
+                <h5>文章索引</h5>
+                <div class="readNow-list readNow-list-h" style="overflow-y:scroll; overflow-x:hidden; margin-top:5px;"></div>
                 <div style="margin-top: 24px">
                     <div class="PnP-item">
-                        上一条 ：<?php $this->thePrev('%s','没啦'); ?>
+                        上一条 ：<?php $this->thePrev('%s','没啦 = ='); ?>
                     </div>
                     <div class="PnP-item">
-                        下一条 ：<?php $this->theNext('%s','没啦'); ?>
+                        下一条 ：<?php $this->theNext('%s','没啦 = ='); ?>
                     </div>
                 </div>
             </div>
@@ -30,7 +31,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                                 <h1 class="post-page-Title"><?php $this->title() ?></h1>
                                 <p id="pageAuthor"><?php $this->author(); ?>
                                     <span style="margin: 0 5px">·</span><span style="letter-spacing: 1px;"><?php $this->date(); ?></span>
-                                    <span>浏览量 ：<?php get_post_view($this) ?></span>
+                                    <!-- <span>浏览量 ：<?php get_post_view($this) ?></span> -->
                                 </p>
 
                                 <div class="tag-item">
@@ -79,7 +80,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                 h2num = ev.find('h1,h2,h3,h4,h5,h6').length;
                 divs = '';
                 for (i = 0;i<h2num;i++){
-                    divs = divs+'<a class="page-ext0-title" href='+'#ph'+i+'>'+ev.find('h1,h2,h3,h4,h5').eq(i).text()+'</a>';
+                    divs = divs+'<a class="page-ext0-title" style="display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;" href='+'#ph'+i+'>'+ev.find('h1,h2,h3,h4,h5').eq(i).text()+'</a>';
                     ev.find('h1,h2,h3,h4,h5').eq(i).attr('id','ph'+i);
                 }
                 $('.readNow-list').html(divs);

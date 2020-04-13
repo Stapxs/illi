@@ -78,18 +78,16 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                             <div class="mdui-row" id="userDataControl">
                                 <div class="blog-user-data">
                                     <div class="user-data">
-                                        <div id="userIcon" style="background-image: url('<?php Typecho_Widget::widget('Widget_Options')->icon() ?>')"></div>
+                                        <div id="userIcon" style="background-image: url('https://stapx.chuhelan.com/usr/uploads/2020/03/3664075920.png')"></div>
                                     </div>
                                     <div class="user-more-data">
                                         <div class="user-mdata-i">
-                                            <h2>Void</h2>
-                                            <p style="color: rgba(0,0,0,.4);">暂未提供接口，请修改index.php</p>
+                                            <h2>Stapx Steve - 林槐</h2>
+                                            <p style="color: rgba(0,0,0,.4);">这是一只喜欢做UI排版的SS，喜欢折腾（逃）。有事没事就想做点什么（然而大半都做不完），米粉、谷歌粉，会卖萌（大雾）。</p>
                                         </div>
                                         <div class="ab-user-url">
-                                            <a><i class="fa fa-github"></i>&nbspGithub</a>
-                                            <a>知乎</a>
-                                            <a><i class="fa fa-terminal"></i>&nbsp其他</a>
-                                            <a><i class="fa fa-envelope-o"></i>&nbsp邮箱：touchitvoid@gmail.com</a>
+                                            <a href="https://github.com/Stapxs"><i class="fa fa-github"></i>&nbspGithub</a>
+                                            <a href="mailto:1007028430.stapx@gmail.com"><i class="fa fa-envelope-o"></i>&nbsp邮箱</a>
                                         </div>
                                     </div>
                                 </div>

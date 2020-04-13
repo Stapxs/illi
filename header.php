@@ -37,6 +37,69 @@
     </div>
     <div style="clear: both"></div>
 </div>
+  
+<script src="https://cdn.jsdelivr.net/gh/Fofade/cnblogsThemes/live2dw/lib/L2Dwidget.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Fofade/cnblogsThemes/live2dw/lib/L2Dwidget.0.min.js"></script>
+<?php
+    date_default_timezone_set('PRC'); 
+    $hour = date('H');   
+    if($hour < 6 || $hour >= 18){
+        echo '
+        <script>
+    L2Dwidget.init({
+        "model": {
+            "scale": 1,
+            "hHeadPos": 0.5,
+            "vHeadPos": 0.618,
+            "jsonPath": "https://live2d.fghrsh.net/api/get/?id=1-87"
+        },
+        "display": {
+            "superSample": 2,
+            "width": 280,
+            "position": "right",
+            "hOffset": 0,
+            "vOffset": -72
+        },
+        "mobile": {
+            "show": false,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.7,
+            "opacityOnHover": 0.2
+        }
+    });</script>
+        ';   
+    }
+    else {
+        echo '
+        <script>
+    L2Dwidget.init({
+        "model": {
+            "scale": 1,
+            "hHeadPos": 0.5,
+            "vHeadPos": 0.618,
+            "jsonPath": "https://live2d.fghrsh.net/api/get/?id=1-86"
+        },
+        "display": {
+            "superSample": 2,
+            "width": 280,
+            "position": "right",
+            "hOffset": 0,
+            "vOffset": -72
+        },
+        "mobile": {
+            "show": false,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.7,
+            "opacityOnHover": 0.2
+        }
+    });</script>';
+    }
+?>
+
 <script>
     scLock = false;
     hm = $('.header-menu');
@@ -66,13 +129,24 @@
         scLock = false;
     }
     scrollSidebar();
+        fetch('https://v1.hitokoto.cn')
+        .then(response => response.json())
+        .then
+        (
+            data => 
+            {
+                const hitokoto = document.getElementById('hitokoto')
+                hitokoto.innerText = data.hitokoto
+            }
+        )
+        .catch(console.error)
 </script>
     <?php if(Typecho_Widget::widget('Widget_Options')->bg == ''): ?>
         <div class="an">
     <?php else: ?>
         <div class="an" style="background-image:url('<?php Typecho_Widget::widget('Widget_Options')->bg() ?>')">
     <?php endif; ?>
-        <h2><?php $this->options->description() ?></h2>
+        <h2 id="hitokoto"><?php $this->options->description() ?></h2>
     </div>
     <div class="mask">
         <div class="clickHidden" style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;"></div>
@@ -147,7 +221,7 @@
                         TAG Cloud
                     </div>
                     <div class="mask-sTitle">
-                        会输出标签云哦~
+                        想看看什么标签呢 QWQ
                     </div>
                     <div class="colorBar" style="width: 100px;margin-top: 5px;"></div>
                     <?php $this->widget('Widget_Metas_Tag_Cloud', 'sort=mid&ignoreZeroCount=1&desc=0&limit=30')->to($tags); ?>

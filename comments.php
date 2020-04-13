@@ -82,6 +82,7 @@
                         <div>
                             <i class="fa fa-envelope-o"></i>
                             <input type="email" class="getDataInput" placeholder="邮箱" name="mail" value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?> />
+<input type="hidden" name="receiveMail" id="receiveMail" value="yes" />
                         </div>
                         <div>
                             <i class="fa fa-link"></i>

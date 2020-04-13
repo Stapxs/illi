@@ -1,12 +1,24 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
-<div class="mdui-divider" id="footerTborder"></div>
+<?php
+      date_default_timezone_set('PRC'); 
+      $hour = date('H');
+      if($hour < 6 || $hour >= 18){   
+        echo '<link href="/usr/themes/illi/css/darkmode.css" rel="stylesheet"/>';   
+      }else{
+        echo ' ';   
+    }
+    ?>
+
+<div style="height:30px;"/>
 <footer>
-    <div>
-        <span><i class="fa fa-code"></i>由强力的 <a href="http://typecho.org/">Typecho</a> 驱动</span>
-        <span><i class="fa fa-pencil-square-o"></i>Theme : typecho-theme-illi</span>
+    <div align="center">
+        <?php Uptime_Plugin::show();?>
+        <?php Typecho_Widget::widget('Widget_Options')->copyright(); ?>
+<div style="margin-top:5px;">
+        <a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank" style="margin-top:5px;font-size: 14px;"> - 苏ICP备 20015498号 | </a><a href="https://icp.gov.moe" target="_blank" style="font-size: 14px;">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20202320" target="_blank" style="font-size: 14px;"> 20202320号 - </a>
+</div>
     </div>
-    <div><?php Typecho_Widget::widget('Widget_Options')->copyright(); ?></div>
 </footer>
 <script>
     hm = $('.header-menu');

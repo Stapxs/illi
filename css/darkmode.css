@@ -1,0 +1,213 @@
+
+/*
+暗黑模式 CSS 样式配置 / dackmode.css by Stapx Steve
+适用于 Typecho 主题 illi（预发行版 0.1） / For Typecho Theam illi / https://github.com/touchitvoid/illi
+使用 Material Design 配色工具进行颜色转换 / Use the Material Design color matching tool for color conversion / https://material.io/design
+*/
+
+	body {
+		background-color: #121212 !important;
+		color: #FFFFFF !important;
+	}
+	.start {
+		background-color: #1E1E1E !important;
+		box-shadow: 0 1px 7px -1px #121212;
+	}
+	text {
+		color: #FFFFFF !important;
+	}
+	p {
+		color: #FFFFFF !important;
+	}
+	h1 {
+		color: #FFFFFF !important;
+	}
+	h2 {
+		color: #FFFFFF !important;
+	}
+	h3 {
+		color: #FFFFFF !important;
+	}
+	h4 {
+		color: #FFFFFF !important;
+	}
+	h5 {
+		color: #FFFFFF !important;
+	}
+	h6 {
+		color: #FFFFFF !important;
+	}
+	em {
+		color: #FFFFFF !important;
+	}
+	span {
+		color: #FFFFFF !important;
+	}
+	hr {
+		background-color: #FFFFFF !important;
+	}
+	.mdui-divider, .mdui-divider-inset {
+		background-color: rgba(255,255,255,.12);
+	}
+	.blog-user-data {
+		box-shadow: 0 1px 7px -1px #1E1E1E;
+		background: url() no-repeat right / 30%;
+		background-color: #232323;
+	}
+	a:link {
+		color:white !important;
+	}
+	a:visited {
+		color:white !important;
+	}
+	.icc-item {
+		box-shadow: 0 1px 6px -1px transparent !important;
+		color: #FFFFFF !important;
+	}
+	.icc-item:after {
+		background-color: #f48fb1 !important;
+	}
+	.page-card {
+		background-color: #232323 !important;
+		box-shadow: 0 1px 6px -1px #1E1E1E !important;
+		border: 5px solid #232323 !important;
+	}
+	.header-menu {
+		background-color: #252525 !important;
+	}
+	.mdui-hidden-xs {
+		color: #FFFFFF !important;
+	}
+	.search {
+		background: #121212 !important;
+		color: rgba(255,255,255,.55) !important;
+	}
+	input {
+		background: #121212 !important;
+	}
+	.blurBg {
+		background: rgba(29,31,32,.65) !important;
+	}
+	.fa {
+		color: #FFFFFF !important;
+	}
+	.page img {
+		border: 5px solid #121212 !important;
+		box-shadow: 0 0 3px rgba(203,143,154, 0.16);
+	}
+	.page ul li:after {
+		background: #5b95c9 !important;
+	}
+	li {
+		color: #FFFFFF !important;
+	}
+	.comments-404 {
+		color: rgba(255,255,255,.6) !important;
+	}
+	#user-com-conText {
+		background: #121212 !important;
+		color: #FFFFFF !important;
+	}
+	.subBtn {
+		background: #7da7b4 !important;
+		box-shadow: 0 0 3px rgba(203,143,154, 0.15);
+	}
+	footer > div {
+		color: #FFFFFF !important;
+	}
+	.toBottom {
+		background: #252525 !important;
+	}
+	.linkMenu {
+		background: #252525 !important;
+	}
+	.linkMenu a {
+		color: #FFFFFF !important;
+	}
+	.PnP-item {
+		color: #FFFFFF !important;
+	}
+	code {
+		color: #FFFFFF !important;
+		border-left: 3px solid #5b95c9;
+	}
+	.linkData h3 {
+		color: #FFFFFF !important;
+	}
+	.linkData p {
+		color: #FFFFFF !important;
+	}
+	.reply-user {
+		color: #FFFFFF !important;
+	}
+	.post-page-content {
+		color: #FFFFFF !important;
+	}
+	.getData-input-pos {
+    	background: #121212 !important;
+	}
+	.indexPage-data {
+		background: #292D2F !important;
+	}
+	.fa-user {
+		color: #FFFFFF !important;
+	}
+	.fa-clock-o {
+		color: #FFFFFF !important;
+	}
+	.fa-tags {
+		color: #FFFFFF !important;
+	}
+	.uptime {
+		color: #FFFFFF !important;
+	}
+	.linkData {
+		background-color: #1E1E1E !important;
+		color: #FFFFFF !important;
+		box-shadow: 0 0 3px #1E1E1E;
+		border: 1px solid white;
+		border-width: 1px;
+	}
+	.aboutPage-html {
+		background-color: #1E1E1E !important;
+	}
+	.archiveBody {
+		background-color: #1E1E1E !important;
+	}
+	.page-title h2 {
+		color: #FFFFFF !important;
+	}
+	.ar_indexTitle {
+		color: #FFFFFF !important;
+	}
+	.page-file-body {
+		background-color: #1E1E1E !important;
+	}
+	.barItem, .barItemBindex, .barClose {
+		color: white;
+		background: #252525;
+	}
+	.mask-panel {
+		background: #2A2A2A;
+	}
+	.mask-title {
+		color: white;
+	}
+	.mask-sTitle {
+		color: white;
+	}
+	.mask {
+		background: rgba(0,0,0,.6);
+	}
+	.backPageTop {
+		background: #252525 !important;
+	}
+	#comments > .comment-list > .comment-item > .comment-children {
+		border-left: 1px solid rgba(255,255,255,1);
+	}
+	.search-input {
+		color: #FFFFFF !important;
+	}
+	.ymusic{
+		background:#252525;
+	}

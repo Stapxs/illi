@@ -7,8 +7,7 @@
     }
     .an h2:after {
         content: '看样子进入了一个404页面';
-        font-size: 34px;
-        letter-spacing: 6px;
+        font-size: 25px;
     }
     .errBody {color:rgba(0,0,0,.65)}
     .errBody h1 {margin : 0 0 16px 0;font-size:28px}
@@ -16,7 +15,7 @@
     <div class="mdui-container">
         <div class="mdui-row">
             <div class="mdui-col-md-10 mdui-col-offset-md-1 errBody">
-                <h1 class=""><?php _e('页面没找到'); ?></h1>
+                <h1 class=""><?php _e('页面没找到欸 QAQ'); ?></h1>
                 <p><?php _e('你想查看的页面已被转移或删除了, 要不要搜索看看: '); ?></p>
                 <form action="" method="post" class="search">
                     <i class="fa fa-search"></i>
