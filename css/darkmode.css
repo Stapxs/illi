@@ -208,6 +208,8 @@
 	.search-input {
 		color: #FFFFFF !important;
 	}
+
+	/* YoduBGM 插件适配暗黑模式 */
 	.ymusic{
 		background:#252525;
 	}
