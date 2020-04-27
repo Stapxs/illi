@@ -12,6 +12,7 @@
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
+        <link rel="icon" href="/usr/themes/illi/img/LHZHP.png" sizes="32x32">
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.1/css/mdui.min.css">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/main.css'); ?>">

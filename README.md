@@ -3,11 +3,10 @@
 
 ### 主项目
 > [illi Github 库](https://github.com/touchitvoid/illi)
-
 ### 演示站
 > [林槐的杂货铺](https://stapx.chuhelan.com/)
-
 ### 主要修改（倒序）
+- 加了个页面图标，文件在img/LZHP.png，代码在Header.php里
 - 右栏默认展开（增大右栏的存在感）
 - 去除了左栏，将回到主页和标签云移到了右栏（没有去除去除部分的代码）
 - 自动切换暗黑模式（dackmode.css 里面还包含适配其他插件暗黑模式的 CSS）
